@@ -2,7 +2,12 @@
 language: swift
 xcode_project: Travis101.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Travis101Tests
-xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone 8
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone X
+
+matrix:
+  include:
+    - osx_image: xcode12
+
 
 script:
-   - xcodebuild clean build test -project Travis101.xcodeproj -scheme Travis101 -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.4,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+   - xcodebuild clean build test -project Travis101.xcodeproj -scheme Travis101 -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.3,name=iPhone X" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
