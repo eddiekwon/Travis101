@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6C64D53B250BBCB70071DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64D53A250BBCB70071DCDF /* AppDelegate.swift */; };
-		6C64D53D250BBCB70071DCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64D53C250BBCB70071DCDF /* SceneDelegate.swift */; };
 		6C64D53F250BBCB70071DCDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64D53E250BBCB70071DCDF /* ViewController.swift */; };
 		6C64D542250BBCB70071DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C64D540250BBCB70071DCDF /* Main.storyboard */; };
 		6C64D544250BBCB90071DCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C64D543250BBCB90071DCDF /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		6C64D537250BBCB70071DCDF /* Travis101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travis101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64D53A250BBCB70071DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C64D53C250BBCB70071DCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6C64D53E250BBCB70071DCDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C64D541250BBCB70071DCDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C64D543250BBCB90071DCDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				6C64D53A250BBCB70071DCDF /* AppDelegate.swift */,
-				6C64D53C250BBCB70071DCDF /* SceneDelegate.swift */,
 				6C64D53E250BBCB70071DCDF /* ViewController.swift */,
 				6C64D540250BBCB70071DCDF /* Main.storyboard */,
 				6C64D543250BBCB90071DCDF /* Assets.xcassets */,
@@ -202,7 +199,6 @@
 			files = (
 				6C64D53F250BBCB70071DCDF /* ViewController.swift in Sources */,
 				6C64D53B250BBCB70071DCDF /* AppDelegate.swift in Sources */,
-				6C64D53D250BBCB70071DCDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,8 +358,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L938T5Q7J8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Travis101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Travis101";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,8 +377,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L938T5Q7J8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Travis101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Travis101";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
