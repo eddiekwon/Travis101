@@ -1,7 +1,8 @@
 
-language: objective-c
+language: swift
 xcode_project: Travis101.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Travis101Tests
-xcode_destination: platform=iOS Simulator,OS=12.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=13.2.2,name=iPhone 8
 
-xcodebuild clean build test -project Travis101/Travis101.xcodeproj -scheme Travis101 -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.2.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+script:
+   - xcodebuild clean build test -project Travis101.xcodeproj -scheme Travis101 -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.2.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
